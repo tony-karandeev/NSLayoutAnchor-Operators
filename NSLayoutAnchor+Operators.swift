@@ -33,14 +33,14 @@ precedencegroup LayoutConstraintPrecedence {
 
 // Constraint operators
 infix operator ~==~  : LayoutConstraintPrecedence  // "Equal to", activates constraint
-infix operator ~==~! : LayoutConstraintPrecedence// "Equal to", activates constraint (explicit form)
-infix operator ~==~? : LayoutConstraintPrecedence// "Equal to", no constraint activation
-infix operator ~<=~  : LayoutConstraintPrecedence// "Less than or equal to", activates constraint
-infix operator ~<=~! : LayoutConstraintPrecedence// "Less than or equal to", activates constraint (explicit form)
-infix operator ~<=~? : LayoutConstraintPrecedence// "Less than or equal to", no constraint activation
-infix operator ~>=~  : LayoutConstraintPrecedence// "Greater than or equal to", activates constraint
-infix operator ~>=~! : LayoutConstraintPrecedence// "Greater than or equal to", activates constraint (explicit form)
-infix operator ~>=~? : LayoutConstraintPrecedence// "Greater than or equal to", no constraint activation
+infix operator ~==~! : LayoutConstraintPrecedence  // "Equal to", activates constraint (explicit form)
+infix operator ~==~? : LayoutConstraintPrecedence  // "Equal to", no constraint activation
+infix operator ~<=~  : LayoutConstraintPrecedence  // "Less than or equal to", activates constraint
+infix operator ~<=~! : LayoutConstraintPrecedence  // "Less than or equal to", activates constraint (explicit form)
+infix operator ~<=~? : LayoutConstraintPrecedence  // "Less than or equal to", no constraint activation
+infix operator ~>=~  : LayoutConstraintPrecedence  // "Greater than or equal to", activates constraint
+infix operator ~>=~! : LayoutConstraintPrecedence  // "Greater than or equal to", activates constraint (explicit form)
+infix operator ~>=~? : LayoutConstraintPrecedence  // "Greater than or equal to", no constraint activation
 
 @discardableResult
 func ~==~<Anchor, T>(lhs: LayoutConstraintComponent<Anchor, T>, rhs: LayoutConstraintComponent<Anchor, T>) -> NSLayoutConstraint {
